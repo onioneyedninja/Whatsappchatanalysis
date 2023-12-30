@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 import streamlit as st
 
-import peprocessor, funfiles
+import peprocessor
+import funfiles
 import matplotlib.pyplot as plt
 import seaborn as sns
 
