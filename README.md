@@ -1,6 +1,8 @@
 Developed by Sneha and Prabhat
 
-Please upload chat export in strict 24 hour format plaese 12 hour fomrat will be brought soon required dependencies:
+Please upload chat export in strict 24 hour format please
+12 hour fomrat will be brought soon 
+required dependencies:
 1) streamlit
 2) pandas
 3) matplotlib
