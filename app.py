@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 import streamlit as st
-
 import peprocessor
 import funfiles
 import matplotlib.pyplot as plt
@@ -13,7 +12,7 @@ if uploaded_file is not None:
     data = bytes_data.decode("utf-8")
     # st.text(data)
     df = peprocessor.preprocess(data)
-    st.dataframe(df)
+    # st.dataframe(df)
     user_list = df['user'].unique().tolist()
     user_list.remove("notification")
     user_list.sort()
@@ -21,6 +20,7 @@ if uploaded_file is not None:
 
     selected_user = st.sidebar.selectbox("show analysis with respect to", user_list)
     if st.sidebar.button("Show Analysis"):
+        st.title("Basic Stats")
         num_messages, num_words, num_media, num_links = funfiles.fetch_stats(selected_user, df)
         col1, col2, col3, col4 = st.columns(4)
         with col1:
